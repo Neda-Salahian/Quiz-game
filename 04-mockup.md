@@ -4,6 +4,11 @@
                  ARNESVEX GAME - Main Menu
 ---------------------------------------------------
 
+Welcome to Arnesvex Game and challenge your JavaScript's knowledge! 
+Please enter your name:
+
+[User's Name Input Field]
+
 Select a difficulty level:
 
 1. Beginner
