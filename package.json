@@ -25,17 +25,19 @@
     "email": "",
     "url": ""
   },
-  "contributors": [
-
-  ],
+  "contributors": [],
   "scripts": {
     "dev": "",
     "test": ""
   },
   "dependencies": {
-
-  },
-  "devDependencies": {
-
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "enquirer": "^2.4.1",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.11",
+    "play-sound": "^1.1.6",
+    "readline-sync": "^1.4.10"
   }
 }
