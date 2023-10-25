@@ -1,7 +1,7 @@
 [
     {
-      "question": "How do you declare a variable in JavaScript?",
-      "options": [
+      "questionTitle": "How do you declare a variable in JavaScript?",
+      "questionOptions": [
         "A. variable x;",
         "B. var x;",
         "C. v x;",
@@ -11,8 +11,8 @@
       "level": "Beginner"
     },
     {
-      "question": "Which symbol is used to assign a value to a variable in JavaScript?",
-      "options": [
+      "questionTitle": "Which symbol is used to assign a value to a variable in JavaScript?",
+      "questionOptions": [
         "A. =",
         "B. :",
         "C. ==",
@@ -22,8 +22,8 @@
       "level": "Beginner"
     },
     {
-      "question": "What is the correct way to write a comment in JavaScript?",
-      "options": [
+      "questionTitle": "What is the correct way to write a comment in JavaScript?",
+      "questionOptions": [
         "A. # This is a comment",
         "B. // This is a comment",
         "C. <!-- This is a comment -->",
@@ -33,8 +33,8 @@
       "level": "Beginner"
     },
     {
-      "question": "How can you display a message in the console in JavaScript?",
-      "options": [
+      "questionTitle": "How can you display a message in the console in JavaScript?",
+      "questionOptions": [
         "A. console.out(\"Hello, world!\");",
         "B. print(\"Hello, world!\");",
         "C. console.log(\"Hello, world!\");",
@@ -44,8 +44,8 @@
       "level": "Beginner"
     },
     {
-      "question": "What is the result of the expression 2 + \"2\" in JavaScript?",
-      "options": [
+      "questionTitle": "What is the result of the expression 2 + \"2\" in JavaScript?",
+      "questionOptions": [
         "A. 4",
         "B. \"4\"",
         "C. 22",
@@ -55,8 +55,8 @@
       "level": "Beginner"
     },
     {
-      "question": "How do you create a function in JavaScript?",
-      "options": [
+      "questionTitle": "How do you create a function in JavaScript?",
+      "questionOptions": [
         "A. function myFunction()",
         "B. def myFunction(): {}",
         "C. create function myFunction() {}",
@@ -66,8 +66,8 @@
       "level": "Beginner"
     },
     {
-      "question": "What is the purpose of the if statement in JavaScript?",
-      "options": [
+      "questionTitle": "What is the purpose of the if statement in JavaScript?",
+      "questionOptions": [
         "A. To create a loop",
         "B. To define a function",
         "C. To execute code conditionally",
@@ -77,8 +77,8 @@
       "level": "Beginner"
     },
     {
-        "question": "How do you write a for loop in JavaScript?",
-        "options": [
+        "questionTitle": "How do you write a for loop in JavaScript?",
+        "questionOptions": [
           "A. loop (var i = 0; i < 10; i++) {}",
           "B. for (i = 0; i < 10; i++) {}",
           "C. for (i = 0; i < 10) {}",
@@ -88,8 +88,8 @@
         "level": "Beginner"
       },
       {
-        "question": "Which operator is used for strict equality in JavaScript?",
-        "options": [
+        "questionTitle": "Which operator is used for strict equality in JavaScript?",
+        "questionOptions": [
           "A. =",
           "B. ==",
           "C. ===",
@@ -99,8 +99,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the purpose of the break statement in JavaScript?",
-        "options": [
+        "questionTitle": "What is the purpose of the break statement in JavaScript?",
+        "questionOptions": [
           "A. To continue to the next iteration of a loop",
           "B. To exit a loop or switch statement",
           "C. To define a function",
@@ -110,8 +110,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the purpose of the prompt() function in JavaScript?",
-        "options": [
+        "questionTitle": "What is the purpose of the prompt() function in JavaScript?",
+        "questionOptions": [
           "A. To display a message in the console",
           "B. To ask the user for input and receive a string",
           "C. To create a pop-up alert",
@@ -121,8 +121,8 @@
         "level": "Beginner"
       },
       {
-        "question": "How do you declare a string variable in JavaScript?",
-        "options": [
+        "questionTitle": "How do you declare a string variable in JavaScript?",
+        "questionOptions": [
           "A. string myString = \"Hello, world!\"",
           "B. let myString = \"Hello, world!\"",
           "C. var myString = \"Hello, world!\"",
@@ -132,8 +132,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What does the NaN value represent in JavaScript?",
-        "options": [
+        "questionTitle": "What does the NaN value represent in JavaScript?",
+        "questionOptions": [
           "A. Not a Number",
           "B. A large number",
           "C. Null value",
@@ -143,8 +143,8 @@
         "level": "Beginner"
       },
       {
-        "question": "How do you add a line break in a string in JavaScript?",
-        "options": [
+        "questionTitle": "How do you add a line break in a string in JavaScript?",
+        "questionOptions": [
           "A. \\n",
           "B. \\r",
           "C. \\b",
@@ -154,8 +154,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the purpose of the toFixed() method in JavaScript?",
-        "options": [
+        "questionTitle": "What is the purpose of the toFixed() method in JavaScript?",
+        "questionOptions": [
           "A. To round a number to the nearest integer",
           "B. To convert a string to a number",
           "C. To format a number with a specified number of decimal places",
@@ -165,8 +165,8 @@
         "level": "Beginner"
       },
       {
-        "question": "How do you comment out a block of code in JavaScript?",
-        "options": [
+        "questionTitle": "How do you comment out a block of code in JavaScript?",
+        "questionOptions": [
           "A. /* This is a comment */",
           "B. // This is a comment",
           "C. <!-- This is a comment -->",
@@ -176,8 +176,8 @@
         "level": "Beginner"
       },
       {
-        "question": "Which operator is used for concatenating strings in JavaScript?",
-        "options": [
+        "questionTitle": "Which operator is used for concatenating strings in JavaScript?",
+        "questionOptions": [
           "A. &",
           "B. +",
           "C. *",
@@ -187,8 +187,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the purpose of the switch statement in JavaScript?",
-        "options": [
+        "questionTitle": "What is the purpose of the switch statement in JavaScript?",
+        "questionOptions": [
           "A. To create a function",
           "B. To execute code conditionally",
           "C. To loop through an array",
@@ -198,8 +198,8 @@
         "level": "Beginner"
       },
       {
-        "question": "How do you define an array in JavaScript?",
-        "options": [
+        "questionTitle": "How do you define an array in JavaScript?",
+        "questionOptions": [
           "A. let myArray = \"item1, item2, item3\";",
           "B. const myArray = [item1, item2, item3];",
           "C. var myArray = [item1, item2, item3];",
@@ -209,8 +209,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the purpose of the length property in JavaScript arrays?",
-        "options": [
+        "questionTitle": "What is the purpose of the length property in JavaScript arrays?",
+        "questionOptions": [
           "A. To set the maximum number of elements in an array",
           "B. To return the number of elements in an array",
           "C. To reverse the order of elements in an array",
@@ -220,8 +220,8 @@
         "level": "Beginner"
       },
       {
-        "question": "How do you declare a function with parameters in JavaScript?",
-        "options": [
+        "questionTitle": "How do you declare a function with parameters in JavaScript?",
+        "questionOptions": [
           "A. function myFunction {param1, param2} {}",
           "B. function myFunction(param1, param2) {}",
           "C. func myFunction(param1, param2) {}",
@@ -231,8 +231,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What does the 'this' keyword refer to in JavaScript?",
-        "options": [
+        "questionTitle": "What does the 'this' keyword refer to in JavaScript?",
+        "questionOptions": [
           "A. It refers to the current date and time.",
           "B. It refers to the parent function's scope.",
           "C. It refers to the current object or context.",
@@ -242,8 +242,8 @@
         "level": "Beginner"
       },
       {
-        "question": "How do you declare a constant variable in JavaScript?",
-        "options": [
+        "questionTitle": "How do you declare a constant variable in JavaScript?",
+        "questionOptions": [
           "A. const myVar;",
           "B. var myVar;",
           "C. let myVar;",
@@ -253,8 +253,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the purpose of the 'typeof' operator in JavaScript?",
-        "options": [
+        "questionTitle": "What is the purpose of the 'typeof' operator in JavaScript?",
+        "questionOptions": [
           "A. It checks if a variable is null or undefined.",
           "B. It converts a value to a boolean.",
           "C. It returns the data type of a value.",
@@ -264,8 +264,8 @@
         "level": "Beginner"
       },
       {
-        "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
-        "options": [
+        "questionTitle": "What is the difference between 'null' and 'undefined' in JavaScript?",
+        "questionOptions": [
           "A. They are the same and can be used interchangeably.",
           "B. 'null' represents an empty or non-existent value, while 'undefined' represents a variable that has been declared but hasn't been assigned a value.",
           "C. 'undefined' is used to clear the value of a variable, while 'null' is used to assign an initial value to a variable.",

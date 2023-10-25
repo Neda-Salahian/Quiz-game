@@ -6,7 +6,7 @@ import chalk from "chalk";
 import chalkAnimation from 'chalk-animation';
 import inquirer from "inquirer";
 import { loadBeginnerQuestions, loadIntermediateQuestions, loadAdvancedQuestions } from './question.js';
-import {runQuiz} from './runquiz.js'
+import {handleQuiz} from './handlequiz.js'
 
 
 function mainMenu() {
@@ -73,7 +73,7 @@ function handleSelectedLevel(choice) {
       );
       process.exit(0);
   }
-  runQuiz(questions);
+  handleQuiz(questions);
 }
 
 function obtainedUserName() {

@@ -1,11 +1,3 @@
-// import beginnerquestions from './data/beginnerquestions.json' assert { type: "json" };
-// import intermediatequestions from './data/intermediatequestions.json' assert { type: "json" };
-// import advancedquestions from './data/advancedquestions.json' assert { type: "json" };
-// import { default as beginnerquestions } from './data/beginnerquestions.json' assert { type: "json" };
-// import { default as intermediatequestions } from './data/intermediatequestions.json' assert { type: "json" };
-// import { default as advancedquestions } from './data/advancedquestions.json' assert { type: "json" };
-
-
 import fs from 'fs';
 
 const jsonBeginnerData = fs.readFileSync('./data/beginnerquestions.json', 'utf8');
@@ -41,7 +33,6 @@ function loadBeginnerQuestions() {
   const randomBeginnerQuestion = randomQuestion(beginnerQuestions);
   return randomBeginnerQuestion;
 }
-const beginnerQuestions = loadBeginnerQuestions();
 
 console.clear();
 
@@ -54,7 +45,6 @@ function loadIntermediateQuestions() {
   const randomIntermediateQuestion = randomQuestion(intermediateQuestions);
   return randomIntermediateQuestion;
 }
-const intermediateQuestions = loadIntermediateQuestions();
 
 console.clear();
 
@@ -65,8 +55,7 @@ function loadAdvancedQuestions() {
   const randomAdvancedQuestion = randomQuestion(advancedQuestions);
   return randomAdvancedQuestion;
 }
-const advancedQuestions = loadAdvancedQuestions();
-// console.log(advancedQuestions);
+
 console.clear();
 
 export {loadBeginnerQuestions,loadIntermediateQuestions,loadAdvancedQuestions}
