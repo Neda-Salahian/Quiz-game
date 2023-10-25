@@ -2,9 +2,11 @@
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 import readline from 'readline-sync';
+import {mainMenu} from './openninglastversion.js'
 
 function runQuiz(questions) {
     let score = 0;
+    let sumScore = 0
     for (let i = 0; i < questions.length; i++){
       const currentQuestion = questions[i];
       console.log(chalk.yellow(`Question ${i + 1}: ${currentQuestion.question}`));
@@ -13,19 +15,26 @@ function runQuiz(questions) {
       if (userAnswer.toUpperCase() === currentQuestion.correctAnswer) {
         console.log(chalk.green('Correct!\n'));
         console.log(chalk.green(`------------------- WOoOoOoOoOoOoOoOoOoOoO -------------------`));
-        score+=10;
+        sumScore+=10;
       } else {
         console.log(chalk.red(`Incorrect. The correct answer is, ${currentQuestion.correctAnswer}`));
         console.log(chalk.red(`------------------ Unlike --------------------`));
+       
       }
-      console.log(`Your current score: ${score}`);
+      console.log(`Your current score: ${sumScore}`);
+     
     }
-    console.log('Quiz completed!');
-    console.log(`Your final score: ${score}`);
+    console.log(chalk.green('Quiz completed!'));
+    console.log(chalk.yellow(`***** Your final score: ${sumScore} *******`));
+    if( sumScore < 100 ){
+      console.log(chalk.red(':( Failed :(((((('));
+    } else {
+      console.log(chalk.green('Super --- gut Gemacht :))))))))))))'));
+    }
 
     const playAgain = readline.question('Do you want to play again? (yes/no): ');
     if (playAgain.toLowerCase() === 'yes') {
-      displayMainMenu(); // Restart the game
+      mainMenu(); // Restart the game
     } else {
       console.log('Thank you for playing! Goodbye.');
     }
