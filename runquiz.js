@@ -5,7 +5,6 @@ import readline from 'readline-sync';
 import {mainMenu} from './openninglastversion.js'
 
 function runQuiz(questions) {
-    let score = 0;
     let sumScore = 0
     for (let i = 0; i < questions.length; i++){
       const currentQuestion = questions[i];
