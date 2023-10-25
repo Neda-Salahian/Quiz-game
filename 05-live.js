@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import inquirer from "inquirer";
 
 const questions = [
@@ -9,7 +10,7 @@ const questions = [
       { name: "c) v x", value: "c" },
       { name: "d) x = var", value: "d" },
     ],
-    correctAnswer: "b", // Corrected from "correctedAnswer"
+    correctAnswer: "b", 
   },
   {
     question:
@@ -39,7 +40,7 @@ let wrongAnswers = 0;
 let gameContinue = true;
 
 async function askQuestion() {
-  if (questions.length > 0 && wrongAnswers < 3) {
+  if (gameContinue > 0 && wrongAnswers < 3 && questions.length > 0) {
     const question = questions.shift();
     const answer = await inquirer.prompt([
       {
@@ -51,22 +52,23 @@ async function askQuestion() {
     ]);
 
     if (answer.selectedAnswer === question.correctAnswer) {
-      console.log("Correct! You got 10 points.");
+      console.log(chalk.blueBright("Correct! You got 10 points."));
       score += 10;
     } else {
-      console.log(`Wrong answer! The correct answer is: ${question.correctAnswer}`);
+      console.log(chalk.red(`Wrong answer! The correct answer is: ${question.correctAnswer}`));
       wrongAnswers++;
       if (wrongAnswers === 3) {
         gameContinue = false;
-        console.log("Game Over!");
+        console.log(chalk.red.bold("Game Over! You are out of lives."));
       }
     }
-
-    console.log(`Score: ${score}`);
+   
+    console.log(chalk.blueBright(`Score: ${score}`));
     askQuestion();
-  } else {
-    console.log("Game Over!");
-    console.log(`Your final score: ${score}`);
+   
+  } else if (gameContinue) {
+    console.log(chalk.bgGreenBright.bold.italic("Congratulations! You answered all questions."));
+    console.log(chalk.greenBright.bold.italic(`Your final score: ${score}`));
   }
 }
 
