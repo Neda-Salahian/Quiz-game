@@ -24,7 +24,7 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "",
+    "start": "node 01-openinggreeting",
     "test": ""
   },
   "dependencies": {

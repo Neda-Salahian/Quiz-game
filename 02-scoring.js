@@ -15,3 +15,4 @@ function scoring(answers){
 /*TESTING */
 const userAnswer = [true, true, true, true, false];
 console.log(scoring(userAnswer));
+
