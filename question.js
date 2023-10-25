@@ -1,6 +1,9 @@
-import beginnerquestions from './data/beginnerquestions.json' assert { type: "json" };
-import intermediatequestions from './data/intermediatequestions.json' assert { type: "json" };
-import advancedquestions from './data/advancedquestions.json' assert { type: "json" };
+// import beginnerquestions from './data/beginnerquestions.json' assert { type: "json" };
+// import intermediatequestions from './data/intermediatequestions.json' assert { type: "json" };
+// import advancedquestions from './data/advancedquestions.json' assert { type: "json" };
+import { default as beginnerquestions } from './data/beginnerquestions.json' assert { type: "json" };
+import { default as intermediatequestions } from './data/intermediatequestions.json' assert { type: "json" };
+import { default as advancedquestions } from './data/advancedquestions.json' assert { type: "json" };
 // Resource: https://v8.dev/features/import-assertions
 // Tip: assert { type: "json" } 
 
@@ -19,6 +22,8 @@ function randomQuestion(array) {
     return randomQuestionArray;
   }
 
+
+
 //Beginner Questions
 function loadBeginnerQuestions() {
   const beginnerQuestions = beginnerquestions.filter(question => question.level === 'Beginner');
@@ -27,9 +32,12 @@ function loadBeginnerQuestions() {
 }
 const beginnerQuestions = loadBeginnerQuestions();
 console.log(beginnerQuestions);
+console.clear();
 
 
-//Intermediate Questions
+
+
+// Intermediate Questions
 function loadIntermediateQuestions() {
   const intermediateQuestions = intermediatequestions.filter(question => question.level === 'Intermediate');
   const randomIntermediateQuestion = randomQuestion(intermediateQuestions);
@@ -37,7 +45,7 @@ function loadIntermediateQuestions() {
 }
 const intermediateQuestions = loadIntermediateQuestions();
 console.log(intermediateQuestions);
-
+console.clear();
 
 
 //Advanced Questions
@@ -49,7 +57,7 @@ function loadAdvancedQuestions() {
 const advancedQuestions = loadAdvancedQuestions();
 console.log(advancedQuestions);
 
-
+console.clear();
 
 
 // console.log("Beginner Questions:");
@@ -60,4 +68,6 @@ console.log(advancedQuestions);
 
 // console.log("Advanced Questions:");
 // console.log(advancedquestions);
+
+export {loadBeginnerQuestions,loadIntermediateQuestions,loadAdvancedQuestions}
 
