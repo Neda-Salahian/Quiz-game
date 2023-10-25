@@ -22,17 +22,12 @@
     "email": "",
     "url": ""
   },
-  "contributors": [
-
-  ],
+  "contributors": [],
   "scripts": {
     "dev": "",
     "test": ""
   },
   "dependencies": {
-
-  },
-  "devDependencies": {
-
+    "cli-progress": "^3.12.0"
   }
 }
