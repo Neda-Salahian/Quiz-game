@@ -1,11 +1,25 @@
 // import beginnerquestions from './data/beginnerquestions.json' assert { type: "json" };
 // import intermediatequestions from './data/intermediatequestions.json' assert { type: "json" };
 // import advancedquestions from './data/advancedquestions.json' assert { type: "json" };
-import { default as beginnerquestions } from './data/beginnerquestions.json' assert { type: "json" };
-import { default as intermediatequestions } from './data/intermediatequestions.json' assert { type: "json" };
-import { default as advancedquestions } from './data/advancedquestions.json' assert { type: "json" };
+// import { default as beginnerquestions } from './data/beginnerquestions.json' assert { type: "json" };
+// import { default as intermediatequestions } from './data/intermediatequestions.json' assert { type: "json" };
+// import { default as advancedquestions } from './data/advancedquestions.json' assert { type: "json" };
+
+
+import fs from 'fs';
+
+const jsonBeginnerData = fs.readFileSync('./data/beginnerquestions.json', 'utf8');
+const jsonInterData = fs.readFileSync('./data/intermediatequestions.json', 'utf8');
+const jsonAdvanceData = fs.readFileSync('./data/advancedquestions.json', 'utf8');
+const beginnerquestions = JSON.parse(jsonBeginnerData);
+const intermediatequestions = JSON.parse(jsonInterData);
+const advancedquestions = JSON.parse(jsonAdvanceData);
 // Resource: https://v8.dev/features/import-assertions
 // Tip: assert { type: "json" } 
+// let beginnerquestions = null;
+// let intermediatequestions = null;
+// let advancedquestions = null;
+
 
 
 
@@ -31,7 +45,7 @@ function loadBeginnerQuestions() {
   return randomBeginnerQuestion;
 }
 const beginnerQuestions = loadBeginnerQuestions();
-console.log(beginnerQuestions);
+
 console.clear();
 
 
@@ -44,7 +58,7 @@ function loadIntermediateQuestions() {
   return randomIntermediateQuestion;
 }
 const intermediateQuestions = loadIntermediateQuestions();
-console.log(intermediateQuestions);
+
 console.clear();
 
 
@@ -55,7 +69,6 @@ function loadAdvancedQuestions() {
   return randomAdvancedQuestion;
 }
 const advancedQuestions = loadAdvancedQuestions();
-console.log(advancedQuestions);
 
 console.clear();
 
