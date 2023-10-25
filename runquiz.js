@@ -1,42 +1,35 @@
-import {displayQuestion} from './displayquestion.js'
+// import {displayQuestion} from './displayquestion.js'
 import inquirer from 'inquirer';
 import chalk from 'chalk';
-// import { loadBeginnerQuestions, loadIntermediateQuestions, loadAdvancedQuestions } from './question.js';
+import readline from 'readline-sync';
 
-
-export function runQuiz(questions) {
-    let currentQuestionIndex = 0;
-  
-    function askQuestion() {
-      if (currentQuestionIndex < questions.length) {
-        const currentQuestion = questions[currentQuestionIndex];
-        displayQuestion(currentQuestion);
-        currentQuestionIndex++;
-        inquirer
-          .prompt([
-            {
-              type: 'input',
-              name: 'answer',
-              message: 'Your answer (A, B, C, or D):',
-            },
-          ])
-          .then((answers) => {
-            // Check the user's answer
-            const userAnswer = answers.answer.toUpperCase();
-            const correctAnswer = currentQuestion.correctAnswer.toUpperCase();
-            if (userAnswer === correctAnswer) {
-              console.log(chalk.green('Correct!\n'));
-            } else {
-              console.log(chalk.red('Incorrect. The correct answer is', correctAnswer, '\n'));
-            }
-  
-            askQuestion();
-          });
+function runQuiz(questions) {
+    let score = 0;
+    for (let i = 0; i < questions.length; i++){
+      const currentQuestion = questions[i];
+      console.log(chalk.yellow(`Question ${i + 1}: ${currentQuestion.question}`));
+      currentQuestion.options.forEach((option) => console.log(option));
+      const userAnswer = readline.question('Enter the letter of your answer: ');
+      if (userAnswer.toUpperCase() === currentQuestion.correctAnswer) {
+        console.log(chalk.green('Correct!\n'));
+        console.log(chalk.green(`------------------- WOoOoOoOoOoOoOoOoOoOoO -------------------`));
+        score+=10;
       } else {
-        console.log('End of questions.');
-        mainMenu();
-        return;
+        console.log(chalk.red(`Incorrect. The correct answer is, ${currentQuestion.correctAnswer}`));
+        console.log(chalk.red(`------------------ Unlike --------------------`));
       }
+      console.log(`Your current score: ${score}`);
     }
-    askQuestion();
-  }
+    console.log('Quiz completed!');
+    console.log(`Your final score: ${score}`);
+
+    const playAgain = readline.question('Do you want to play again? (yes/no): ');
+    if (playAgain.toLowerCase() === 'yes') {
+      displayMainMenu(); // Restart the game
+    } else {
+      console.log('Thank you for playing! Goodbye.');
+    }
+}
+
+
+  export {runQuiz}

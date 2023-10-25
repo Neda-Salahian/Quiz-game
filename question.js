@@ -20,9 +20,6 @@ const advancedquestions = JSON.parse(jsonAdvanceData);
 // let intermediatequestions = null;
 // let advancedquestions = null;
 
-
-
-
 function randomQuestion(array) {
   // Resource: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
   // shuffle
@@ -69,18 +66,8 @@ function loadAdvancedQuestions() {
   return randomAdvancedQuestion;
 }
 const advancedQuestions = loadAdvancedQuestions();
-
+// console.log(advancedQuestions);
 console.clear();
-
-
-// console.log("Beginner Questions:");
-// console.log(beginnerquestions);
-
-// console.log("Intermediate Questions:");
-// console.log(intermediatequestions);
-
-// console.log("Advanced Questions:");
-// console.log(advancedquestions);
 
 export {loadBeginnerQuestions,loadIntermediateQuestions,loadAdvancedQuestions}
 

@@ -1,8 +1,4 @@
 # Node.js
 node_modules/
 package-lock.json
-package.json
-index.js
-expo.js
-openning.js
-openning-2.js
+my-file/
