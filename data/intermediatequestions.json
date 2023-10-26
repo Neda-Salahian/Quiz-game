@@ -1,277 +1,277 @@
 [
+  {
+      "questionTitle": "What is the purpose of the forEach method in JavaScript?",
+      "questionOptions": [
+        "A. To create a new array",
+        "B. To loop through the elements of an array and execute a provided function",
+        "C. To sort an array in ascending order",
+        "D. To add elements to the beginning of an array"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
     {
-        "questionTitle": "What is the purpose of the forEach method in JavaScript?",
-        "questionOptions": [
-          "A. To create a new array",
-          "B. To loop through the elements of an array and execute a provided function",
-          "C. To sort an array in ascending order",
-          "D. To add elements to the beginning of an array"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How do you read user input from the command line in Node.js?",
-        "questionOptions": [
-          "A. Use the prompt function",
-          "B. Use the readline module",
-          "C. Use the input event",
-          "D. Use the process.argv array"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the purpose of the require function in Node.js?",
-        "questionOptions": [
-          "A. To include a local JavaScript file",
-          "B. To import built-in JavaScript functions",
-          "C. To create a new module",
-          "D. To display a message in the console"
-        ],
-        "correctAnswer": "A",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How can you handle asynchronous operations in JavaScript using callbacks?",
-        "questionOptions": [
-          "A. By using async/await exclusively",
-          "B. By passing a function as an argument to be executed once the asynchronous operation is complete",
-          "C. By using setTimeout with promises",
-          "D. By using try...catch blocks"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the purpose of the fs module in Node.js?",
-        "questionOptions": [
-          "A. To create and manipulate HTML elements",
-          "B. To read and write files on the file system",
-          "C. To fetch data from a remote server",
-          "D. To create a function"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What does the term 'callback' refer to in JavaScript?",
-        "questionOptions": [
-          "A. A function that executes immediately upon declaration",
-          "B. A function passed as an argument to another function and is intended to be called at a later time",
-          "C. A function that is called only once in the program",
-          "D. A function that creates a loop"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the primary benefit of using higher-order functions in JavaScript?",
-        "questionOptions": [
-          "A. They allow you to create custom events and listeners.",
-          "B. They enable the triggering of HTML events in a web browser.",
-          "C. They provide a way to manipulate the DOM.",
-          "D. They promote code reusability and functional composition"
-        ],
-        "correctAnswer": "D",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How can you apply a custom higher-order function in JavaScript to transform each element in an array into a new array?",
-        "questionOptions": [
-          "A. Using a for loop",
-          "B. Using the .map() method",
-          "C. Using the .filter() method",
-          "D. Using the .reduce() method"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "Which of the following higher-order functions is used to filter elements in an array based on a provided condition?",
-        "questionOptions": [
-          "A. .map()",
-          "B. .forEach()",
-          "C. .filter()",
-          "D. .reduce()"
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "Higher-order functions often involve the use of callbacks. What is a callback function in JavaScript?",
-        "questionOptions": [
-          "A. A function that's executed immediately upon declaration",
-          "B. A function passed as an argument to another function to be called later",
-          "C. A function for handling user input",
-          "D. A function used for creating loops"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the purpose of the map() method in JavaScript?",
-        "questionOptions": [
-          "A. To create a new array by applying a function to each element in an existing array",
-          "B. To filter elements based on a provided condition",
-          "C. To execute a function on every element of an array",
-          "D. To sort an array in ascending order"
-        ],
-        "correctAnswer": "A",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How do you define a class in JavaScript?",
-        "questionOptions": [
-          "A. class MyClass = {}",
-          "B. class MyClass extends {}",
-          "C. class MyClass {}",
-          "D. create class MyClass {}"
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the role of the constructor() method in a JavaScript class?",
-        "questionOptions": [
-          "A. To destroy the class instance",
-          "B. To define class methods",
-          "C. To create an object of the class",
-          "D. To initialize class properties and create an instance"
-        ],
-        "correctAnswer": "D",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What does the super keyword refer to in a JavaScript class?",
-        "questionOptions": [
-          "A. A way to access the parent class's properties",
-          "B. A method for removing elements from an array",
-          "C. An indicator of a static class",
-          "D. A way to call the parent class's constructor"
-        ],
-        "correctAnswer": "D",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How do you create an instance of a class in JavaScript?",
-        "questionOptions": [
-          "A. var myInstance = new MyClass();",
-          "B. let myInstance = create MyClass();",
-          "C. const myInstance = MyClass();",
-          "D. const myInstance = new MyClass();"
-        ],
-        "correctAnswer": "D",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is inheritance in JavaScript classes?",
-        "questionOptions": [
-          "A. A way to hide class methods",
-          "B. The process of creating a new class from an existing class, inheriting properties and methods",
-          "C. A way to create static class properties",
-          "D. A way to override class methods"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How do you declare a static method in a JavaScript class?",
-        "questionOptions": [
-          "A. static method myMethod() {}",
-          "B. const static myMethod = function() {}",
-          "C. function static myMethod() {}",
-          "D. static myMethod() {}"
-        ],
-        "correctAnswer": "D",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the purpose of the extends keyword in JavaScript classes?",
-        "questionOptions": [
-          "A. To override a parent class method",
-          "B. To create a subclass that inherits properties and methods from a parent class",
-          "C. To define a parent class",
-          "D. To declare a class method"
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How do you create a higher-order function in JavaScript?",
-        "questionOptions": [
-          "A. By defining a function that takes another function as an argument",
-          "B. By declaring a function with a callback inside",
-          "C. By using the bind() method",
-          "D. By specifying a function to execute immediately"
-        ],
-        "correctAnswer": "A",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is a closure in JavaScript?",
-        "questionOptions": [
-          "A. A way to lock an object",
-          "B. A function that is immediately invoked",
-          "C. A function that has access to variables from its containing function, even after the containing function has finished executing",
-          "D. A way to close a class definition"
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "What is the purpose of the Date object in JavaScript?",
-        "questionOptions": [
-          "A. To create date-related events in web browsers",
-          "B. To format text",
-          "C. To work with dates, times, and perform operations like addition and subtraction",
-          "D. To manipulate the DOM"
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How can you create a copy of an array or object in JavaScript without modifying the original?",
-        "questionOptions": [
-          "A. By using the .clone() method",
-          "B. By using the .copy() method",
-          "C. By spreading the array or object using the spread operator (...)",
-          "D. By calling .duplicate() on the array or object"
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "In JavaScript, what is the purpose of the Object.keys() method?",
-        "questionOptions": [
-          "A. It returns an array of all the values in an object.",
-          "B. It returns an array of all the keys in an object.",
-          "C. It allows you to add properties to an object.",
-          "D. It converts an object into a JSON string."
-        ],
-        "correctAnswer": "B",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "In JavaScript, what does the Object.assign() method do when it's used to merge objects?",
-        "questionOptions": [
-          "A. It creates a new object without modifying the original objects.",
-          "B. It appends the properties of the first object to the second object.",
-          "C. It merges multiple objects into a single target object by copying their properties.",
-          "D. It overwrites the properties of the target object with the properties of the source object."
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      },
-      {
-        "questionTitle": "How do you access the values of an object's properties in JavaScript?",
-        "questionOptions": [
-          "A. By using the Object.getValues() method.",
-          "B. By using a for...of loop to iterate through the object.",
-          "C. By using the Object.values() method, which returns an array of the object's property values.",
-          "D. By using the Object.properties() method."
-        ],
-        "correctAnswer": "C",
-        "level": "Intermediate"
-      }
+      "questionTitle": "How do you read user input from the command line in Node.js?",
+      "questionOptions": [
+        "A. Use the prompt function",
+        "B. Use the readline module",
+        "C. Use the input event",
+        "D. Use the process.argv array"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the purpose of the require function in Node.js?",
+      "questionOptions": [
+        "A. To include a local JavaScript file",
+        "B. To import built-in JavaScript functions",
+        "C. To create a new module",
+        "D. To display a message in the console"
+      ],
+      "correctAnswer": "A",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How can you handle asynchronous operations in JavaScript using callbacks?",
+      "questionOptions": [
+        "A. By using async/await exclusively",
+        "B. By passing a function as an argument to be executed once the asynchronous operation is complete",
+        "C. By using setTimeout with promises",
+        "D. By using try...catch blocks"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the purpose of the fs module in Node.js?",
+      "questionOptions": [
+        "A. To create and manipulate HTML elements",
+        "B. To read and write files on the file system",
+        "C. To fetch data from a remote server",
+        "D. To create a function"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What does the term 'callback' refer to in JavaScript?",
+      "questionOptions": [
+        "A. A function that executes immediately upon declaration",
+        "B. A function passed as an argument to another function and is intended to be called at a later time",
+        "C. A function that is called only once in the program",
+        "D. A function that creates a loop"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the primary benefit of using higher-order functions in JavaScript?",
+      "questionOptions": [
+        "A. They allow you to create custom events and listeners.",
+        "B. They enable the triggering of HTML events in a web browser.",
+        "C. They provide a way to manipulate the DOM.",
+        "D. They promote code reusability and functional composition"
+      ],
+      "correctAnswer": "D",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How can you apply a custom higher-order function in JavaScript to transform each element in an array into a new array?",
+      "questionOptions": [
+        "A. Using a for loop",
+        "B. Using the .map() method",
+        "C. Using the .filter() method",
+        "D. Using the .reduce() method"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "Which of the following higher-order functions is used to filter elements in an array based on a provided condition?",
+      "questionOptions": [
+        "A. .map()",
+        "B. .forEach()",
+        "C. .filter()",
+        "D. .reduce()"
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "Higher-order functions often involve the use of callbacks. What is a callback function in JavaScript?",
+      "questionOptions": [
+        "A. A function that's executed immediately upon declaration",
+        "B. A function passed as an argument to another function to be called later",
+        "C. A function for handling user input",
+        "D. A function used for creating loops"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the purpose of the map() method in JavaScript?",
+      "questionOptions": [
+        "A. To create a new array by applying a function to each element in an existing array",
+        "B. To filter elements based on a provided condition",
+        "C. To execute a function on every element of an array",
+        "D. To sort an array in ascending order"
+      ],
+      "correctAnswer": "A",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How do you define a class in JavaScript?",
+      "questionOptions": [
+        "A. class MyClass = {}",
+        "B. class MyClass extends {}",
+        "C. class MyClass {}",
+        "D. create class MyClass {}"
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the role of the constructor() method in a JavaScript class?",
+      "questionOptions": [
+        "A. To destroy the class instance",
+        "B. To define class methods",
+        "C. To create an object of the class",
+        "D. To initialize class properties and create an instance"
+      ],
+      "correctAnswer": "D",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What does the super keyword refer to in a JavaScript class?",
+      "questionOptions": [
+        "A. A way to access the parent class's properties",
+        "B. A method for removing elements from an array",
+        "C. An indicator of a static class",
+        "D. A way to call the parent class's constructor"
+      ],
+      "correctAnswer": "D",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How do you create an instance of a class in JavaScript?",
+      "questionOptions": [
+        "A. var myInstance = new MyClass();",
+        "B. let myInstance = create MyClass();",
+        "C. const myInstance = MyClass();",
+        "D. const myInstance = new MyClass();"
+      ],
+      "correctAnswer": "D",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is inheritance in JavaScript classes?",
+      "questionOptions": [
+        "A. A way to hide class methods",
+        "B. The process of creating a new class from an existing class, inheriting properties and methods",
+        "C. A way to create static class properties",
+        "D. A way to override class methods"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How do you declare a static method in a JavaScript class?",
+      "questionOptions": [
+        "A. static method myMethod() {}",
+        "B. const static myMethod = function() {}",
+        "C. function static myMethod() {}",
+        "D. static myMethod() {}"
+      ],
+      "correctAnswer": "D",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the purpose of the extends keyword in JavaScript classes?",
+      "questionOptions": [
+        "A. To override a parent class method",
+        "B. To create a subclass that inherits properties and methods from a parent class",
+        "C. To define a parent class",
+        "D. To declare a class method"
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How do you create a higher-order function in JavaScript?",
+      "questionOptions": [
+        "A. By defining a function that takes another function as an argument",
+        "B. By declaring a function with a callback inside",
+        "C. By using the bind() method",
+        "D. By specifying a function to execute immediately"
+      ],
+      "correctAnswer": "A",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is a closure in JavaScript?",
+      "questionOptions": [
+        "A. A way to lock an object",
+        "B. A function that is immediately invoked",
+        "C. A function that has access to variables from its containing function, even after the containing function has finished executing",
+        "D. A way to close a class definition"
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "What is the purpose of the Date object in JavaScript?",
+      "questionOptions": [
+        "A. To create date-related events in web browsers",
+        "B. To format text",
+        "C. To work with dates, times, and perform operations like addition and subtraction",
+        "D. To manipulate the DOM"
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How can you create a copy of an array or object in JavaScript without modifying the original?",
+      "questionOptions": [
+        "A. By using the .clone() method",
+        "B. By using the .copy() method",
+        "C. By spreading the array or object using the spread operator (...)",
+        "D. By calling .duplicate() on the array or object"
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "In JavaScript, what is the purpose of the Object.keys() method?",
+      "questionOptions": [
+        "A. It returns an array of all the values in an object.",
+        "B. It returns an array of all the keys in an object.",
+        "C. It allows you to add properties to an object.",
+        "D. It converts an object into a JSON string."
+      ],
+      "correctAnswer": "B",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "In JavaScript, what does the Object.assign() method do when it's used to merge objects?",
+      "questionOptions": [
+        "A. It creates a new object without modifying the original objects.",
+        "B. It appends the properties of the first object to the second object.",
+        "C. It merges multiple objects into a single target object by copying their properties.",
+        "D. It overwrites the properties of the target object with the properties of the source object."
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    },
+    {
+      "questionTitle": "How do you access the values of an object's properties in JavaScript?",
+      "questionOptions": [
+        "A. By using the Object.getValues() method.",
+        "B. By using a for...of loop to iterate through the object.",
+        "C. By using the Object.values() method, which returns an array of the object's property values.",
+        "D. By using the Object.properties() method."
+      ],
+      "correctAnswer": "C",
+      "level": "Intermediate"
+    }
 ]
