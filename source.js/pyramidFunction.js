@@ -63,3 +63,5 @@ const befüllen = (farbenArray) => {
       `;
 };
 console.log(befüllen(farbenArray));
+
+export { befüllen };

@@ -30,3 +30,5 @@ const farbenArray = () => {
 };
 
 console.log(farbenArray());
+
+export { farbenArray };
