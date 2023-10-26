@@ -1,21 +1,29 @@
 import chalk from 'chalk';
 import readline from 'readline-sync';
 import { mainMenu } from './openninglastversion.js';
+import inquirer from "inquirer";
 
-function handleQuiz(questions) {
+async function handleQuiz(questions) {
   let sumScore = 0;
+  let wrongAnswers = 0;
+  let gameContinue = true;
 
   //Calculate Question Score
   for (let i = 0; i < questions.length; i++) {
     const currentQuestion = questions[i];
     const questionScore = scoring(currentQuestion, i + 1);//encapsulation
     //clean code and better reading
-    
+    wrongAnswers++;
+    if (wrongAnswers === 3) {
+      gameContinue = false;
+      console.log(chalk.red.bold("Game Over! You are out of lives."));
+    }
     sumScore += questionScore;
+
     console.log(chalk.blue(`Your current score: ${sumScore}`));
   }
 
-  //Show the Quiz Result 
+  //Show the Quiz Result '
   console.log(chalk.green('Quiz completed!'));
   console.log(chalk.yellow(`***** Your final score: ${sumScore} *******`));
 
@@ -35,13 +43,21 @@ function handleQuiz(questions) {
 }
 
 //Calculate Score - Calculate Question
-function scoring(currentQuestion, i) { //for each-question
+async function scoring(currentQuestion, i) { //for each-question
   console.log(chalk.yellow(`Question ${i}: ${currentQuestion.questionTitle}`));
   currentQuestion.questionOptions.forEach((option) => console.log(option));//fetch the Qutions options
+ //um Optionen anzuzeigen
+  // const userAnswer = readline.question('Enter the letter of your answer: ');
 
-  const userAnswer = readline.question('Enter the letter of your answer: ');
-
-  if (userAnswer.toUpperCase() === currentQuestion.correctAnswer) {
+      const userAnswer = await inquirer.prompt([
+            {
+              type: "list",
+              name: "selectedAnswer",
+              message: `${currentQuestion.questionTitle}`,
+              choices: currentQuestion.option,
+            },
+          ]);
+  if (userAnswer.selectedAnswer === currentQuestion.correctAnswer) {
     // Correct answer.
     console.log(chalk.green('Correct!\n'));
     console.log(chalk.green(`------------------- WOoOoOoOoOoOoOoOoOoOoO -------------------`));
@@ -51,6 +67,8 @@ function scoring(currentQuestion, i) { //for each-question
     console.log(chalk.red(`Incorrect. The correct answer is: ${currentQuestion.correctAnswer}\n`));
     console.log(chalk.red(`------------------ Unlike --------------------`));
     return 0;
+   
+    
   }
 }
 
