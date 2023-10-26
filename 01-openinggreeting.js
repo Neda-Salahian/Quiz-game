@@ -1,10 +1,53 @@
 // UI opening
 
+
+// import function
+
+import { askQuestion } from "./05-live.js";
+
 // IMPORT PACKAGE
 
 import chalk from "chalk";
 import chalkAnimation from 'chalk-animation';
 import inquirer from "inquirer";
+
+
+ // BANNER OPENING FUNCTION
+function bannerOpening() {
+  const bannerArt = `
+  _  _              _       _                        _       _    
+ | || |    ___     | |     | |     ___      o O O   | |     | |   
+ | __ |   / -_)    | |     | |    / _ \\    o        |_|     |_|   
+ |_||_|   \\___|   _|_|_   _|_|_   \\___/   TS__[O]  _(_)_   _(_)_  
+_|"""""|_|"""""|_|"""""|_|"""""|_|"""""| {======|_| """ |_| """ | 
+\`-0-0-'\`-0-0-'\`-0-0-'\`-0-0-'\`-0-0-'./o--000'"\`-0-0-'\`-0-0-' 
+  `;
+
+  
+
+  console.log(chalk.yellow(bannerArt));
+}
+
+async function obtainedUserName() {
+  return inquirer
+  .prompt([
+    {
+      type: "input",
+      name: "userName",
+      message: chalk.redBright(
+        "Welcome to Arnesvex Game! Please enter your name: "
+      ),
+      default : "Guest",
+    },
+  ])
+  .then((answers) => {
+  const enteredName =  answers.userName.trim();
+  return enteredName === "" ? "Guest" : enteredName;
+  });
+}
+
+
+
 
 function mainMenu() {
   console.log(
@@ -40,6 +83,7 @@ function handleSelectedLevel(choice) {
     case "1":
       console.log("Starting with Beginner Level...");
       // the function for beginner level will be placed here
+      askQuestion();
       break;
     case "2":
       console.log("Starting with Intermediate Level...");
@@ -66,40 +110,6 @@ function handleSelectedLevel(choice) {
       );
       process.exit(0);
   }
-}
-
-async function obtainedUserName() {
-  return inquirer
-  .prompt([
-    {
-      type: "input",
-      name: "userName",
-      message: chalk.redBright(
-        "Welcome to Arnesvex Game! Please enter your name: "
-      ),
-      default : "Guest",
-    },
-  ])
-  .then((answers) => {
-  const enteredName =  answers.userName.trim();
-  return enteredName === "" ? "Guest" : enteredName;
-  });
-}
-
-// BANNER OPENING FUNCTION
-function bannerOpening() {
-  const bannerArt = `
-  _  _              _       _                        _       _    
- | || |    ___     | |     | |     ___      o O O   | |     | |   
- | __ |   / -_)    | |     | |    / _ \\    o        |_|     |_|   
- |_||_|   \\___|   _|_|_   _|_|_   \\___/   TS__[O]  _(_)_   _(_)_  
-_|"""""|_|"""""|_|"""""|_|"""""|_|"""""| {======|_| """ |_| """ | 
-\`-0-0-'\`-0-0-'\`-0-0-'\`-0-0-'\`-0-0-'./o--000'"\`-0-0-'\`-0-0-' 
-  `;
-
-  
-
-  console.log(chalk.yellow(bannerArt));
 }
 
 

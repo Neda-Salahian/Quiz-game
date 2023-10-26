@@ -39,7 +39,7 @@ let score = 0;
 let wrongAnswers = 0;
 let gameContinue = true;
 
-async function askQuestion() {
+ async function askQuestion() {
   if (gameContinue > 0 && wrongAnswers < 3 && questions.length > 0) {
     const question = questions.shift();
     const answer = await inquirer.prompt([
@@ -73,3 +73,5 @@ async function askQuestion() {
 }
 
 askQuestion();
+
+export {askQuestion} ;
