@@ -1,0 +1,279 @@
+[
+  {
+    "questionTitle": "What is the primary purpose of a callback function in the context of higher-order functions?",
+    "questionOptions": [
+      { "name": "A. To encapsulate data" },
+      { "name": "B. To handle asynchronous operations" },
+      { "name": "C. To create custom event listeners" },
+      { "name": "D. To define class properties" }
+    ],
+    "correctAnswer": "B",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How do you create a subclass in JavaScript, inheriting properties and methods from a parent class?",
+    "questionOptions": [
+      { "name": "A. By using the extends keyword to define the subclass and invoking the parent class constructor" },
+      { "name": "B. By copying and pasting the parent class code into the subclass" },
+      { "name": "C. By using the prototype object to link the subclass to the parent class" },
+      { "name": "D. JavaScript does not support subclassing." }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the purpose of the JavaScript Date object, and how can you manipulate dates and times using it?",
+    "questionOptions": [
+      { "name": "A. The Date object is used to create date-related events in web browsers." },
+      { "name": "B. The Date object is used for creating classes in JavaScript." },
+      { "name": "C. The Date object allows you to work with dates, times, and perform operations like addition and subtraction." },
+      { "name": "D. The Date object is used for DOM manipulation." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the primary purpose of the JavaScript Set object, and how is it different from an array?",
+    "questionOptions": [
+      { "name": "A. A Set object is used to create custom events." },
+      { "name": "B. A Set object stores a collection of unique values and does not allow duplicates, while an array can contain duplicate values." },
+      { "name": "C. A Set object is an array with enhanced features for sorting and filtering." },
+      { "name": "D. A Set object is a type of class definition." }
+    ],
+    "correctAnswer": "B",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How can you use a higher-order function to apply a given function to every element of an array and create a new array with the results?",
+    "questionOptions": [
+      { "name": "A. By using the map function" },
+      { "name": "B. By using the filter function" },
+      { "name": "C. By using the reduce function" },
+      { "name": "D. By using the forEach function" }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "When creating a subclass in JavaScript, which keyword is used to define the subclass and inherit properties and methods from a parent class?",
+    "questionOptions": [
+      { "name": "A. extends" },
+      { "name": "B. inherits" },
+      { "name": "C. subclass" },
+      { "name": "D. superclass" }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How do you define a subclass that inherits properties and methods from a parent class in JavaScript?",
+    "questionOptions": [
+      { "name": "A. By using the copy keyword" },
+      { "name": "B. By duplicating the parent class code" },
+      { "name": "C. By using the extend keyword and invoking the parent class constructor" },
+      { "name": "D. By importing the parent class module" }
+    ],
+    "correctAnswer": "D",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "When creating a subclass in JavaScript, what is the keyword used to reference the parent class's constructor?",
+    "questionOptions": [
+      { "name": "A. super" },
+      { "name": "B. this" },
+      { "name": "C. parent" },
+      { "name": "D. extends" }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "Which higher-order function is commonly used to iterate over the elements of an array and apply a given function to each element?",
+    "questionOptions": [
+      { "name": "A. map" },
+      { "name": "B. filter" },
+      { "name": "C. reduce" },
+      { "name": "D. sort" }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the primary advantage of using higher-order functions like map, filter, and reduce when working with arrays?",
+    "questionOptions": [
+      { "name": "A. They guarantee that the original array is not modified." },
+      { "name": "B. They always perform faster than traditional for loops." },
+      { "name": "C. They are simpler to implement and debug." },
+      { "name": "D. They provide a concise and declarative way to transform and manipulate data." }
+    ],
+    "correctAnswer": "D",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "In JavaScript, what is the purpose of the apply and call methods when working with functions?",
+    "questionOptions": [
+      { "name": "A. They are used to create new functions based on existing functions." },
+      { "name": "B. They allow you to execute a function immediately upon declaration." },
+      { "name": "C. They enable you to call a function with a specified this value and arguments." },
+      { "name": "D. They help to define and initialize class properties." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How can you prevent a function from being executed until a specific time has passed using vanilla JavaScript?",
+    "questionOptions": [
+      { "name": "A. By using the setTimeout method." },
+      { "name": "B. By using the wait keyword in function declarations." },
+      { "name": "C. By invoking the function repeatedly within a loop." },
+      { "name": "D. By using a sleep function in the async/await syntax." }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the purpose of the addEventListener method in JavaScript?",
+    "questionOptions": [
+      { "name": "A. To trigger a function immediately upon page load." },
+      { "name": "B. To add event listeners to DOM elements to respond to specific events." },
+      { "name": "C. To attach external JavaScript files to the HTML page." },
+      { "name": "D. To define and initialize class properties." }
+    ],
+    "correctAnswer": "B",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How can you remove an event listener from a DOM element using JavaScript?",
+    "questionOptions": [
+      { "name": "A. By setting the listener's function to null." },
+      { "name": "B. By using the removeEventListener method and passing the same function and event type that was added." },
+      { "name": "C. By using the clearEvent method." },
+      { "name": "D. By removing the element from the DOM." }
+    ],
+    "correctAnswer": "B",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "In JavaScript, what is the purpose of the localStorage object?",
+    "questionOptions": [
+      { "name": "A. To define a local variable that is not accessible outside of the function where it is declared." },
+      { "name": "B. To store and retrieve key-value pairs in a web browser's local storage." },
+      { "name": "C. To store password-protected data." },
+      { "name": "D. To fetch data from a remote server." }
+    ],
+    "correctAnswer": "B",
+    "level": "Advanced"
+  },
+
+
+  {
+    "questionTitle": "How can you iterate over the properties of an object in JavaScript?",
+    "questionOptions": [
+      { "name": "A. By using the for...in loop." },
+      { "name": "B. By using the for...of loop." },
+      { "name": "C. By using the forEach method." },
+      { "name": "D. By directly accessing the properties." }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the primary purpose of the console.error() method in JavaScript?",
+    "questionOptions": [
+      { "name": "A. To display informational messages in the console." },
+      { "name": "B. To log warnings and non-critical issues." },
+      { "name": "C. To print errors and exceptions in the console." },
+      { "name": "D. To trigger immediate functions." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the primary advantage of using arrow functions in JavaScript?",
+    "questionOptions": [
+      { "name": "A. They have a shorter syntax, making the code more concise." },
+      { "name": "B. They allow you to define classes more easily." },
+      { "name": "C. They offer improved performance compared to regular functions." },
+      { "name": "D. They are required when working with asynchronous code." }
+    ],
+    "correctAnswer": "A",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How can you check if a variable is of a specific data type in JavaScript?",
+    "questionOptions": [
+      { "name": "A. By using the checkTypeOf method." },
+      { "name": "B. By comparing it with undefined or null." },
+      { "name": "C. By using the typeof operator." },
+      { "name": "D. By using the isType function." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the purpose of the encodeURIComponent and decodeURIComponent functions in JavaScript?",
+    "questionOptions": [
+      { "name": "A. They are used to encrypt and decrypt data sent over a network." },
+      { "name": "B. They are used for URL encoding and decoding to handle special characters in URLs." },
+      { "name": "C. They help to format data for displaying in HTML tables." },
+      { "name": "D. They are used for encoding and decoding binary data." }
+    ],
+    "correctAnswer": "B",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How can you concatenate two or more strings in JavaScript?",
+    "questionOptions": [
+      { "name": "A. By using the join method." },
+      { "name": "B. By directly adding the strings together." },
+      { "name": "C. By using template literals with {}." },
+      { "name": "D. By creating a custom string concatenation function." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is the purpose of the this keyword in JavaScript, and how does it behave in different contexts?",
+    "questionOptions": [
+      { "name": "A. The this keyword refers to the current function being executed and is static in nature." },
+      { "name": "B. this always points to the global object in all contexts." },
+      { "name": "C. this refers to the object that is executing the current function and its value can vary depending on the context." },
+      { "name": "D. this is only used in arrow functions." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "How can you work with modules in vanilla JavaScript to organize and encapsulate code?",
+    "questionOptions": [
+      { "name": "A. JavaScript does not support modules, so code must be organized in a single file." },
+      { "name": "B. By using the require function to import modules from external files." },
+      { "name": "C. By using the module.exports and require statements to export and import modules." },
+      { "name": "D. By using the createModule method to create custom modules." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "What is a 'higher-order function' in JavaScript?",
+    "questionOptions": [
+      { "name": "A. A function that executes immediately upon declaration." },
+      { "name": "B. A function used to manipulate the Document Object Model (DOM)." },
+      { "name": "C. A function that accepts other functions as arguments and/or returns functions." },
+      { "name": "D. A function for creating loops." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  },
+  {
+    "questionTitle": "In JavaScript, what is the main advantage of using a callback function with higher-order functions like map or filter?",
+    "questionOptions": [
+      { "name": "A. Callback functions provide a way to execute asynchronous operations within higher-order functions." },
+      { "name": "B. Callback functions allow for direct access to lower-level DOM manipulation methods." },
+      { "name": "C. Callback functions enable code execution without the need for functions to return values, enhancing reusability and flexibility." },
+      { "name": "D. Callback functions are used primarily for creating custom event listeners." }
+    ],
+    "correctAnswer": "C",
+    "level": "Advanced"
+  }
+]
