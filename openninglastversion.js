@@ -36,27 +36,33 @@ function mainMenu() {
     .then((answers) => {
       handleSelectedLevel(answers.level);
     });
+
+  
 }
 
 function handleSelectedLevel(choice) {
     let questions;
   switch (choice) {
     case "1":
+      console.clear();
       console.log("Starting with Beginner Level...");
       // the function for beginner level will be placed here
       questions = loadBeginnerQuestions();
       break;
     case "2":
+      console.clear();
       console.log("Starting with Intermediate Level...");
       // the function for intermediate level will be placed here
       questions = loadIntermediateQuestions();
       break;
     case "3":
+      console.clear();
       console.log("Starting with Advanced Level...");
       // the function for advanced level will be placed here
       questions = loadAdvancedQuestions();
       break;
     case "4":
+      console.clear();
       console.log("Closing the Pyramid...");
       console.log(chalk.bold.redBright("\nThank you for playing with us !"));
       console.log(
@@ -115,7 +121,9 @@ bannerOpening();
 obtainedUserName().then((playerName) => {
   console.clear();
   console.log(chalk.redBright(`Hello, ${playerName}!👋\nLet's get started.\n`));
+
   mainMenu();
+
 });
 
 

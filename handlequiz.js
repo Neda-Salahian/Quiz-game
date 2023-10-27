@@ -6,13 +6,20 @@ function handleQuiz(questions) {
   let sumScore = 0;
   let wrongAnswers = 0;
   let gameContinue = true;
+  let answersArray = [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null];
 
   //Calculate Question Score
   for (let i = 0; i < questions.length && gameContinue ; i++) {
     const currentQuestion = questions[i];
     const questionScore = scoring(currentQuestion, i + 1);//encapsulation
     //clean code and better reading
-    
+    // return of type number 
+    if(questionScore === 10){
+      answersArray[i]= true;
+    } else {
+      answersArray[i]=false;
+    }
+    console.log(answersArray)
     sumScore += questionScore;
     console.log(chalk.blue(`Your current score: ${sumScore}`));
     if (questionScore === 0) {
@@ -67,7 +74,10 @@ function handleQuiz(questions) {
     `)
     );
   }
+  return {wrongAnswers, sumScore, answersArray}
 }
+
+
 
 //Calculate Score - Calculate Question
 function scoring(currentQuestion, i) { //for each-question
