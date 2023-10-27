@@ -134,10 +134,10 @@
   {
     "questionTitle": "What is the purpose of the addEventListener method in JavaScript?",
     "questionOptions": [
-      { "name": "A. To trigger a function immediately upon page load." },
-      { "name": "B. To add event listeners to DOM elements to respond to specific events." },
-      { "name": "C. To attach external JavaScript files to the HTML page." },
-      { "name": "D. To define and initialize class properties." }
+     "A. To trigger a function immediately upon page load." ,
+      "B. To add event listeners to DOM elements to respond to specific events." ,
+      "C. To attach external JavaScript files to the HTML page." ,
+      "D. To define and initialize class properties." 
     ],
     "correctAnswer": "B",
     "level": "Advanced"

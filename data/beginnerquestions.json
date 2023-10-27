@@ -5,7 +5,7 @@
       "A. variable x;",
       "B. var x;",
       "C. v x;",
-      "D. x = var;"
+      "D. var x = 10;"
     ],
     "correctAnswer": "D",
     "level": "Beginner"
@@ -25,7 +25,7 @@
     "questionTitle": "What is the correct way to write a comment in JavaScript?",
     "questionOptions": [
       "A. # This is a comment",
-      "B. // This is a comment",
+      "B. // This is a comment //",
       "C. <!-- This is a comment -->",
       "D. /* This is a comment */"
     ],

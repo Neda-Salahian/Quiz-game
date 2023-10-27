@@ -91,7 +91,7 @@ function handleQuiz(questions) {
 
   // Show Menu ...
   const playAgain = readline.question("Do you want to play again? (yes/no): ");
-  if (playAgain.toLowerCase() === "yes") {
+  if (playAgain === "yes") {
     mainMenu(); // Restart the game
   } else {
     console.log(chalk.bold.redBright("Thank you for playing! Goodbye."));
