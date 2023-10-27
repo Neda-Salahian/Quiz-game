@@ -4,6 +4,7 @@ import { mainMenu } from "./openninglastversion.js";
 import { farbenArray } from "./farbenArray.js";
 import { befüllen } from "./pyramidFunction.js";
 
+
 function handleQuiz(questions) {
   let sumScore = 0;
   let wrongAnswers = 0;
@@ -51,7 +52,7 @@ function handleQuiz(questions) {
     }
     const dynamicFarbenArray = farbenArray(answersArray);
     console.log(befüllen(dynamicFarbenArray, sumScore, wrongAnswers));
-    //console.log(chalk.blue(`Your current score: ${sumScore}`));
+    console.log(chalk.blue(`Your current score: ${sumScore}`));
 
     if (questionScore === 0) {
       let lifeRest = 3 - wrongAnswers;
@@ -108,7 +109,7 @@ function handleQuiz(questions) {
     `)
     );
   }
-  //return { wrongAnswers, sumScore, answersArray };
+ // return { wrongAnswers, sumScore, answersArray };
 }
 
 //Calculate Score - Calculate Question
@@ -122,7 +123,7 @@ function scoring(currentQuestion, i) {
   if (userAnswer.toUpperCase() === currentQuestion.correctAnswer) {
     // Correct answer.
     console.log(chalk.green("Correct!\n"));
-//     console.log(` __  _____               _       _   
+     console.log(` __  _____               _       _   
 // /  ||  _  |             (_)     | |  
 // \`| || |/' |  _ __   ___  _ _ __ | |_ 
 //  | ||  /| | | '_ \\ / _ \\| | '_ \\| __|

@@ -82,23 +82,29 @@ function handleSelectedLevel(choice) {
   handleQuiz(questions);
 }
 
-const obtainedUserName = async ()=> {
-  return inquirer
-  .prompt([
-    {
-      type: "input",
-      name: "userName",
-      message: chalk.redBright(
-        "Welcome to Arnesvex Game! Please enter your name: "
-      ),
-      default : "Guest",
-    },
-  ])
-  .then((answers) => {
-  const enteredName =  answers.userName.trim();
-  return enteredName === "" ? "Guest" : enteredName;
-  });
+// Add a global variable to store the username.
+let username = "Guest";
+
+async function obtainedUserName() {
+  if (username === "Guest") {
+    const answers = await inquirer.prompt([
+      {
+        type: "input",
+        name: "userName",
+        message: chalk.redBright(
+          "Welcome to Arnesvex Game! Please enter your name: "
+        ),
+        default: "Guest",
+      },
+    ]);
+
+    username = answers.userName.trim() === "" ? "Guest" : answers.userName;
+  }
+
+  return username;
 }
+
+
 
 // BANNER OPENING FUNCTION
 function bannerOpening() {
