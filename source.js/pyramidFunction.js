@@ -1,35 +1,36 @@
 import chalk from 'chalk';
 
-const farbenArray = [
-    [
-      '\x1B[43m     \x1B[49m', '\x1B[43m     \x1B[49m',
-      '     ',                 '\x1B[41mx   x\x1B[49m',
-      '\x1B[43m     \x1B[49m', '\x1B[41mx   x\x1B[49m',
-      '\x1B[43m     \x1B[49m', '\x1B[43m     \x1B[49m',
-      '     ',                 '     ',
-      '     ',                 '     ',
-      '     ',                 '     ',
-      '     ',                 '     ',
-      '     ',                 '     ',
-      '     ',                 '     ',
-      '     '
-    ],
-    [
-      '\x1B[43m 001 \x1B[49m', '\x1B[43m 002 \x1B[49m',
-      ' 003 ',                 '\x1B[41m  X  \x1B[49m',
-      '\x1B[43m 005 \x1B[49m', '\x1B[41m  X  \x1B[49m',
-      '\x1B[43m 007 \x1B[49m', '\x1B[43m 008 \x1B[49m',
-      ' 009 ',                 ' 010 ',
-      ' 011 ',                 ' 012 ',
-      ' 013 ',                 ' 014 ',
-      ' 015 ',                 ' 016 ',
-      ' 017 ',                 ' 018 ',
-      ' 019 ',                 ' 020 ',
-      ' 021 '
-    ]
+const farbenArray = 
+[
+  [
+    '\x1B[43m     \x1B[49m', '\x1B[43m     \x1B[49m',
+    '\x1B[41mx   x\x1B[49m', '\x1B[43m     \x1B[49m',
+    '\x1B[41mx   x\x1B[49m', '\x1B[43m     \x1B[49m',
+    '\x1B[43m     \x1B[49m', '     ',
+    '     ',                 '     ',
+    '     ',                 '     ',
+    '     ',                 '     ',
+    '     ',                 '     ',
+    '     ',                 '     ',
+    '     ',                 '     ',
+    '     '
+  ],
+  [
+    '\x1B[43m 001 \x1B[49m', '\x1B[43m 002 \x1B[49m',
+    '\x1B[41m  X  \x1B[49m', '\x1B[43m 004 \x1B[49m',
+    '\x1B[41m  X  \x1B[49m', '\x1B[43m 006 \x1B[49m',
+    '\x1B[43m 007 \x1B[49m', ' 008 ',
+    ' 009 ',                 ' 010 ',
+    ' 011 ',                 ' 012 ',
+    ' 013 ',                 ' 014 ',
+    ' 015 ',                 ' 016 ',
+    ' 017 ',                 ' 018 ',
+    ' 019 ',                 ' 020 ',
+    ' 021 '
   ]
+]
   const score = chalk.blue('50');
-  const lives = chalk.blue('I I I');
+  const lives = chalk.blue('1');
   const playerName = chalk.blue('Arnesvex');
 
 // Oben nur zum veranschaulischen-------UNTEN CODE ZUM ÜBERNEHMEN
@@ -51,7 +52,7 @@ const befüllen = (farbenArray) => {
                           |${bgBlockNr[15]}|${bgBlockNr[16]}|${bgBlockNr[17]}|                        ||             ||  ||
                         __|${bgBlock[15]}|${bgBlock[16]}|${bgBlock[17]}|__                      ||   Lives:    ||  ||
                        |${bgBlock[11]}|${bgBlock[12]}|${bgBlock[13]}|${bgBlock[14]}|                     ||             ||  ||
-                       |${bgBlockNr[11]}|${bgBlockNr[12]}|${bgBlockNr[13]}|${bgBlockNr[14]}|                     ||   ${lives}     ||  ||
+                       |${bgBlockNr[11]}|${bgBlockNr[12]}|${bgBlockNr[13]}|${bgBlockNr[14]}|                     ||   ${lives}         ||  ||
                      __|${bgBlock[11]}|${bgBlock[12]}|${bgBlock[13]}|${bgBlock[14]}|__                   ||_____________||  ||
                     |${bgBlock[6]}|${bgBlock[7]}|${bgBlock[8]}|${bgBlock[9]}|${bgBlock[10]}|                  ||             ||  ||
                     |${bgBlockNr[6]}|${bgBlockNr[7]}|${bgBlockNr[8]}|${bgBlockNr[9]}|${bgBlockNr[10]}|                  ||   Score:    ||  ||
