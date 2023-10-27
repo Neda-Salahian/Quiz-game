@@ -82,7 +82,7 @@ function handleSelectedLevel(choice) {
   handleQuiz(questions);
 }
 
-function obtainedUserName() {
+const obtainedUserName = async ()=> {
   return inquirer
   .prompt([
     {
@@ -119,6 +119,7 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""| {======|_| """ |_| """ |
 bannerOpening();
 
 obtainedUserName().then((playerName) => {
+  console.log(playerName);
   console.clear();
   console.log(chalk.redBright(`Hello, ${playerName}!👋\nLet's get started.\n`));
 
@@ -127,4 +128,4 @@ obtainedUserName().then((playerName) => {
 });
 
 
-export {mainMenu}
+export {mainMenu, obtainedUserName}
