@@ -1,8 +1,9 @@
 import chalk from "chalk";
 import readline from "readline-sync";
-import { mainMenu } from "./openninglastversion.js";
+import { mainMenu } from "./01-opening.js";
 import { farbenArray } from "./farbenArray.js";
 import { befüllen } from "./pyramidFunction.js";
+
 
 
 function handleQuiz(questions) {

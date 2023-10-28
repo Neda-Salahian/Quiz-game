@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { obtainedUserName } from './openninglastversion.js';
+import { obtainedUserName } from './01-opening.js';
 /*
 const farbenArray = [
     [

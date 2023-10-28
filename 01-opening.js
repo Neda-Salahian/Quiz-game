@@ -5,8 +5,8 @@
 import chalk from "chalk";
 import chalkAnimation from 'chalk-animation';
 import inquirer from "inquirer";
-import { loadBeginnerQuestions, loadIntermediateQuestions, loadAdvancedQuestions } from './question.js';
-import {handleQuiz} from './handlequiz.js'
+import { loadBeginnerQuestions, loadIntermediateQuestions, loadAdvancedQuestions } from './03-question.js';
+import {handleQuiz} from './02-handlequiz.js'
 
 
 function mainMenu() {
