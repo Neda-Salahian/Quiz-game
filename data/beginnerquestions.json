@@ -79,10 +79,10 @@
   {
       "questionTitle": "How do you write a for loop in JavaScript?",
       "questionOptions": [
-        "A. loop (var i = 0; i < 10; i++) {}",
+        "A. loop (let i = 0; i < 10; i++) {}",
         "B. for (i = 0; i < 10; i++) {}",
         "C. for (i = 0; i < 10) {}",
-        "D. for (var i = 0; i < 10; i++) {}"
+        "D. for (let i = 0; i < 10; i++) {}"
       ],
       "correctAnswer": "D",
       "level": "Beginner"
@@ -105,17 +105,6 @@
         "B. To exit a loop or switch statement",
         "C. To define a function",
         "D. To display a message"
-      ],
-      "correctAnswer": "B",
-      "level": "Beginner"
-    },
-    {
-      "questionTitle": "What is the purpose of the prompt() function in JavaScript?",
-      "questionOptions": [
-        "A. To display a message in the console",
-        "B. To ask the user for input and receive a string",
-        "C. To create a pop-up alert",
-        "D. To declare a variable"
       ],
       "correctAnswer": "B",
       "level": "Beginner"
@@ -165,28 +154,6 @@
       "level": "Beginner"
     },
     {
-      "questionTitle": "How do you comment out a block of code in JavaScript?",
-      "questionOptions": [
-        "A. /* This is a comment */",
-        "B. // This is a comment",
-        "C. <!-- This is a comment -->",
-        "D. /* This is a multi-line comment */"
-      ],
-      "correctAnswer": "D",
-      "level": "Beginner"
-    },
-    {
-      "questionTitle": "Which operator is used for concatenating strings in JavaScript?",
-      "questionOptions": [
-        "A. &",
-        "B. +",
-        "C. *",
-        "D. ||"
-      ],
-      "correctAnswer": "D",
-      "level": "Beginner"
-    },
-    {
       "questionTitle": "What is the purpose of the switch statement in JavaScript?",
       "questionOptions": [
         "A. To create a function",
@@ -195,17 +162,6 @@
         "D. To perform different actions based on different conditions"
       ],
       "correctAnswer": "D",
-      "level": "Beginner"
-    },
-    {
-      "questionTitle": "How do you define an array in JavaScript?",
-      "questionOptions": [
-        "A. let myArray = \"item1, item2, item3\";",
-        "B. const myArray = [item1, item2, item3];",
-        "C. var myArray = [item1, item2, item3];",
-        "D. array myArray = [item1, item2, item3];"
-      ],
-      "correctAnswer": "C",
       "level": "Beginner"
     },
     {

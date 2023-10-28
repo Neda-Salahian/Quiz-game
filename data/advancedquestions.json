@@ -46,10 +46,10 @@
   {
     "questionTitle": "How can you use a higher-order function to apply a given function to every element of an array and create a new array with the results?",
     "questionOptions": [
-      { "name": "A. By using the map function" },
-      { "name": "B. By using the filter function" },
-      { "name": "C. By using the reduce function" },
-      { "name": "D. By using the forEach function" }
+      "A. By using the map function" ,
+       "B. By using the filter function" ,
+       "C. By using the reduce function" ,
+       "D. By using the forEach function" 
     ],
     "correctAnswer": "A",
     "level": "Advanced"
@@ -132,41 +132,6 @@
     "level": "Advanced"
   },
   {
-    "questionTitle": "What is the purpose of the addEventListener method in JavaScript?",
-    "questionOptions": [
-     "A. To trigger a function immediately upon page load." ,
-      "B. To add event listeners to DOM elements to respond to specific events." ,
-      "C. To attach external JavaScript files to the HTML page." ,
-      "D. To define and initialize class properties." 
-    ],
-    "correctAnswer": "B",
-    "level": "Advanced"
-  },
-  {
-    "questionTitle": "How can you remove an event listener from a DOM element using JavaScript?",
-    "questionOptions": [
-     "A. By setting the listener's function to null." ,
-      "B. By using the removeEventListener method and passing the same function and event type that was added." ,
-       "C. By using the clearEvent method." ,
-       "D. By removing the element from the DOM." 
-    ],
-    "correctAnswer": "B",
-    "level": "Advanced"
-  },
-  {
-    "questionTitle": "In JavaScript, what is the purpose of the localStorage object?",
-    "questionOptions": [
-   "A. To define a local variable that is not accessible outside of the function where it is declared." ,
-     "B. To store and retrieve key-value pairs in a web browser's local storage." ,
-      "C. To store password-protected data." ,
-       "D. To fetch data from a remote server." 
-    ],
-    "correctAnswer": "B",
-    "level": "Advanced"
-  },
-
-
-  {
     "questionTitle": "How can you iterate over the properties of an object in JavaScript?",
     "questionOptions": [
     "A. By using the for...in loop." ,
@@ -208,17 +173,6 @@
       "D. By using the isType function." 
     ],
     "correctAnswer": "C",
-    "level": "Advanced"
-  },
-  {
-    "questionTitle": "What is the purpose of the encodeURIComponent and decodeURIComponent functions in JavaScript?",
-    "questionOptions": [
-      "A. They are used to encrypt and decrypt data sent over a network." ,
-      "B. They are used for URL encoding and decoding to handle special characters in URLs." ,
-      "C. They help to format data for displaying in HTML tables." ,
-       "D. They are used for encoding and decoding binary data." 
-    ],
-    "correctAnswer": "B",
     "level": "Advanced"
   },
   {

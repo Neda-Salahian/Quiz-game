@@ -122,8 +122,8 @@ function scoring(currentQuestion, i) {
 
   if (userAnswer.toUpperCase() === currentQuestion.correctAnswer) {
     // Correct answer.
-    console.log(chalk.green("Correct!\n"));
-     console.log(` __  _____               _       _   
+    console.log(chalk.green("\nCorrect!\n"));
+    // console.log(` __  _____               _       _   
 // /  ||  _  |             (_)     | |  
 // \`| || |/' |  _ __   ___  _ _ __ | |_ 
 //  | ||  /| | | '_ \\ / _ \\| | '_ \\| __|
