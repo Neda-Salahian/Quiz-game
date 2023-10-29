@@ -87,6 +87,9 @@ function handleSelectedLevel(choice) {
 // Add a global variable to store the username.
 let username = "Guest";
 
+/* code allow it to pause and wait for the user to enter their name using the inquirer library while still permitting the program to run other tasks or maintain its responsiveness.
+
+https://stackoverflow.com/questions/54529471/javascript-async-and-await*/
 async function obtainedUserName() {
   if (username === "Guest") {
     const answers = await inquirer.prompt([
@@ -125,6 +128,9 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""| {======|_| """ |_| """ |
 }
 
 bannerOpening();
+
+/*.then() is used to handle the result of the asynchronous function obtainedUserName(). 
+This function returns a Promise, and when that Promise is resolved, the code inside the .then() block is executed. */
 
 obtainedUserName().then((playerName) => {
   console.log(playerName);

@@ -3,8 +3,11 @@ import readline from "readline-sync";
 import { mainMenu, obtainedUserName, username } from "./01-opening.js";
 import { farbenArray } from "./farbenArray.js";
 import { befüllen } from "./pyramidFunction.js";
+// import { startTimer } from "./setimer.js";
+// import { SingleBar } from 'cli-progress';
 
 
+// let timerInterval; // Define the timerInterval globally
 
 function handleQuiz(questions) {
   let sumScore = 0;
@@ -35,6 +38,7 @@ function handleQuiz(questions) {
   ];
 
   // let colorArray = [];
+
 
   //Calculate Question Score
   for (let i = 0; i < questions.length && gameContinue; i++) {
@@ -117,11 +121,36 @@ function handleQuiz(questions) {
 
 //Calculate Score - Calculate Question
 function scoring(currentQuestion, i) {
+
+ 
   //for each-question
   console.log(chalk.yellow(`Question ${i}: ${currentQuestion.questionTitle}`));
   currentQuestion.questionOptions.forEach((option) => console.log(option)); //fetch the Qutions options
+
+   // Create a flag to track if the timer has expired
+  // let timerExpired = false;
+
+  // Start the timer and set timerExpired to true when time runs out
+  /*startTimer(() => {
+    timerExpired = true;
+  })*/
+
   //um Optionen anzuzeigen
-  const userAnswer = readline.question("Enter the letter of your answer: ");
+  const userAnswer = readline.question("\nEnter the letter of your answer: ");
+
+    // Clear the timer when the user answers
+    // clearInterval(timerInterval);
+
+    /*
+
+  // Check if the timer expired
+  if (timerExpired) {
+    console.log("Run out of time");
+    // Handle the case when the timer runs out here
+    return 0;
+  }
+*/
+
 
   if (userAnswer.toUpperCase() === currentQuestion.correctAnswer) {
     // Correct answer.

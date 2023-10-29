@@ -41,12 +41,11 @@ function startTimer() {
       bar.stop();
       console.clear(); // Clear the console
       console.log('Run of time');
-      // Add logic for what to do when the timer reaches 0 here
     }
   }, 1000); // 1000 milliseconds = 1 second
 }
 
-startTimer();
+//  startTimer();
 
 export {startTimer};
 

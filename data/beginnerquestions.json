@@ -115,9 +115,9 @@
         "A. string myString = \"Hello, world!\"",
         "B. let myString = \"Hello, world!\"",
         "C. var myString = \"Hello, world!\"",
-        "D. const myString = \"Hello, world!\""
+        "D. myString let= \"Hello, world!\""
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "level": "Beginner"
     },
     {
