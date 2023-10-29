@@ -1,5 +1,6 @@
 import chalk from 'chalk';
 
+
 const farbenArray = (answersArray) => {
    // const result = [true, true, null, false, true, false, true, true, null, null, null, null, null, null, null, null, null, null, null, null, null];
     // Muss verknüpft werden mit dem ursprünglichen Zahlen Array

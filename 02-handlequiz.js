@@ -1,6 +1,6 @@
 import chalk from "chalk";
 import readline from "readline-sync";
-import { mainMenu } from "./01-opening.js";
+import { mainMenu, obtainedUserName, username } from "./01-opening.js";
 import { farbenArray } from "./farbenArray.js";
 import { befüllen } from "./pyramidFunction.js";
 
@@ -51,8 +51,10 @@ function handleQuiz(questions) {
     if(questionScore === 0){
       wrongAnswers++;
     }
+
+    const playerName = username;
     const dynamicFarbenArray = farbenArray(answersArray);
-    console.log(befüllen(dynamicFarbenArray, sumScore, wrongAnswers));
+    console.log(befüllen(dynamicFarbenArray, sumScore, wrongAnswers, username));
     console.log(chalk.blue(`Your current score: ${sumScore}`));
 
     if (questionScore === 0) {
@@ -141,9 +143,12 @@ function scoring(currentQuestion, i) {
         `Incorrect. The correct answer is: ${currentQuestion.correctAnswer}\n`
       )
     );
-    console.log(chalk.red(`------------------ Unlike --------------------`));
+    // console.log(chalk.red(`------------------ Unlike --------------------`));
     return 0;
   }
 }
+
+
+
 
 export { handleQuiz };

@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { obtainedUserName } from './01-opening.js';
+import { obtainedUserName} from './01-opening.js';
 /*
 const farbenArray = [
     [
@@ -38,11 +38,15 @@ const farbenArray = [
 
 //console.log(befüllen(farbenArray)); 
 
-const befüllen = (farbenArray, sumScore = 0, wrongAnswers) => { 
+
+const befüllen = (farbenArray, sumScore = 0, wrongAnswers, playerName = "Guest") => { 
+ 
     const bgBlock = [...farbenArray[0]];
     const bgBlockNr = [...farbenArray[1]];
     const lifeRestLocal = 3-wrongAnswers;
+   
     //console.log(sumScore + "sumscore");
+
     return `
                             Pyramide of Arnesvex           
                                                                         
@@ -50,7 +54,7 @@ const befüllen = (farbenArray, sumScore = 0, wrongAnswers) => {
                                 |${bgBlock[20]}|                               //              //||
                                 |${bgBlockNr[20]}|                             <=================> ||
                               __|${bgBlock[20]}|__                            ||             ||  ||
-                             |${bgBlock[18]}|${bgBlock[19]}|                           ||   Player: ${obtainedUserName()}  ||  ||
+                             |${bgBlock[18]}|${bgBlock[19]}|                           ||Player: ${playerName} ||  ||
                              |${bgBlockNr[18]}|${bgBlockNr[19]}|                           ||             ||  ||
                            __|${bgBlock[18]}|${bgBlock[19]}|__                         ||             ||  ||
                           |${bgBlock[15]}|${bgBlock[16]}|${bgBlock[17]}|                        ||_____________||  ||
