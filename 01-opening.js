@@ -5,8 +5,10 @@
 import chalk from "chalk";
 import chalkAnimation from 'chalk-animation';
 import inquirer from "inquirer";
-import { loadBeginnerQuestions, loadIntermediateQuestions, loadAdvancedQuestions } from './question.js';
-import {handleQuiz} from './handlequiz.js'
+import { loadBeginnerQuestions, loadIntermediateQuestions, loadAdvancedQuestions } from './03-question.js';
+import {handleQuiz} from './02-handlequiz.js'
+import { befüllen } from "./pyramidFunction.js";
+import { farbenArray } from "./farbenArray.js";
 
 
 function mainMenu() {
@@ -36,27 +38,33 @@ function mainMenu() {
     .then((answers) => {
       handleSelectedLevel(answers.level);
     });
+
+  
 }
 
 function handleSelectedLevel(choice) {
     let questions;
   switch (choice) {
     case "1":
+      console.clear();
       console.log("Starting with Beginner Level...");
       // the function for beginner level will be placed here
       questions = loadBeginnerQuestions();
       break;
     case "2":
+      console.clear();
       console.log("Starting with Intermediate Level...");
       // the function for intermediate level will be placed here
       questions = loadIntermediateQuestions();
       break;
     case "3":
+      console.clear();
       console.log("Starting with Advanced Level...");
       // the function for advanced level will be placed here
       questions = loadAdvancedQuestions();
       break;
     case "4":
+      console.clear();
       console.log("Closing the Pyramid...");
       console.log(chalk.bold.redBright("\nThank you for playing with us !"));
       console.log(
@@ -76,23 +84,29 @@ function handleSelectedLevel(choice) {
   handleQuiz(questions);
 }
 
-function obtainedUserName() {
-  return inquirer
-  .prompt([
-    {
-      type: "input",
-      name: "userName",
-      message: chalk.redBright(
-        "Welcome to Arnesvex Game! Please enter your name: "
-      ),
-      default : "Guest",
-    },
-  ])
-  .then((answers) => {
-  const enteredName =  answers.userName.trim();
-  return enteredName === "" ? "Guest" : enteredName;
-  });
+// Add a global variable to store the username.
+let username = "Guest";
+
+async function obtainedUserName() {
+  if (username === "Guest") {
+    const answers = await inquirer.prompt([
+      {
+        type: "input",
+        name: "userName",
+        message: chalk.redBright(
+          "Welcome to Arnesvex Game! Please enter your name: "
+        ),
+        default: "Guest",
+      },
+    ]);
+
+    username = answers.userName.trim() === "" ? "Guest" : answers.userName;
+  }
+
+  return username;
 }
+
+
 
 // BANNER OPENING FUNCTION
 function bannerOpening() {
@@ -113,10 +127,13 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""| {======|_| """ |_| """ |
 bannerOpening();
 
 obtainedUserName().then((playerName) => {
+  console.log(playerName);
   console.clear();
   console.log(chalk.redBright(`Hello, ${playerName}!👋\nLet's get started.\n`));
+
   mainMenu();
+
 });
 
 
-export {mainMenu}
+export {mainMenu, obtainedUserName, username}

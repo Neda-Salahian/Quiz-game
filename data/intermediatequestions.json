@@ -11,17 +11,6 @@
       "level": "Intermediate"
     },
     {
-      "questionTitle": "How do you read user input from the command line in Node.js?",
-      "questionOptions": [
-        "A. Use the prompt function",
-        "B. Use the readline module",
-        "C. Use the input event",
-        "D. Use the process.argv array"
-      ],
-      "correctAnswer": "B",
-      "level": "Intermediate"
-    },
-    {
       "questionTitle": "What is the purpose of the require function in Node.js?",
       "questionOptions": [
         "A. To include a local JavaScript file",
@@ -30,17 +19,6 @@
         "D. To display a message in the console"
       ],
       "correctAnswer": "A",
-      "level": "Intermediate"
-    },
-    {
-      "questionTitle": "How can you handle asynchronous operations in JavaScript using callbacks?",
-      "questionOptions": [
-        "A. By using async/await exclusively",
-        "B. By passing a function as an argument to be executed once the asynchronous operation is complete",
-        "C. By using setTimeout with promises",
-        "D. By using try...catch blocks"
-      ],
-      "correctAnswer": "B",
       "level": "Intermediate"
     },
     {
@@ -176,17 +154,6 @@
       "level": "Intermediate"
     },
     {
-      "questionTitle": "How do you declare a static method in a JavaScript class?",
-      "questionOptions": [
-        "A. static method myMethod() {}",
-        "B. const static myMethod = function() {}",
-        "C. function static myMethod() {}",
-        "D. static myMethod() {}"
-      ],
-      "correctAnswer": "D",
-      "level": "Intermediate"
-    },
-    {
       "questionTitle": "What is the purpose of the extends keyword in JavaScript classes?",
       "questionOptions": [
         "A. To override a parent class method",
@@ -206,17 +173,6 @@
         "D. By specifying a function to execute immediately"
       ],
       "correctAnswer": "A",
-      "level": "Intermediate"
-    },
-    {
-      "questionTitle": "What is a closure in JavaScript?",
-      "questionOptions": [
-        "A. A way to lock an object",
-        "B. A function that is immediately invoked",
-        "C. A function that has access to variables from its containing function, even after the containing function has finished executing",
-        "D. A way to close a class definition"
-      ],
-      "correctAnswer": "C",
       "level": "Intermediate"
     },
     {
